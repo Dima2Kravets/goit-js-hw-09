@@ -37,6 +37,10 @@ textarea {
   outline: transparent;
 
 }
+input:hover,
+textarea:hover {
+  border: 1px solid #000;
+}
 
 label {
   font-family: "Montserrat", sans-serif;
@@ -77,4 +81,40 @@ button{
     height: 40px;
     background: #4e75ff;
 
+}
+
+button:hover{
+  background: #6c8cff;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery-item {
+  aspect-ratio: 18 / 10;
+  width: calc((100% - 48px) / 3);
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 24px;
 }
